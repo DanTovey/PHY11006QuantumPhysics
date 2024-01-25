@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: topic1.md
+  title: Topic 1 - The nature of light
+- file: topic2.md
+  title: Topic 2 - EM radiation from atoms
+- file: topic3.md
+  title: Topic 3 - de Broglie waves
+- file: topic4.md
+  title: Topic 4 - Introduction to quantum theory
+- file: topic5.md
+  title: Topic 5 - The Heisenberg Uncertainty Principle
