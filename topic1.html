@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>The nature of light &#8212; PHY11006 - Quantum Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'topic1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EM radiation from atoms" href="topic2.html" />
+    <link rel="prev" title="PHY11006 - Quantum Physics" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logouni.png" class="logo__image only-light" alt="PHY11006 - Quantum Physics - Home"/>
+    <script>document.write(`<img src="_static/logouni.png" class="logo__image only-dark" alt="PHY11006 - Quantum Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    PHY11006 - Quantum Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Topic 1 - The nature of light</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic2.html">Topic 2 - EM radiation from atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic3.html">Topic 3 - de Broglie waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic4.html">Topic 4 - Introduction to quantum theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic5.html">Topic 5 - The Heisenberg Uncertainty Principle</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftopic1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/topic1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The nature of light</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-according-to-classical-physics">Light according to classical physics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-photoelectric-effect">The photoelectric effect</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-compton-effect">The Compton effect</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-nature-of-light">
+<span id="topic1"></span><h1>The nature of light<a class="headerlink" href="#the-nature-of-light" title="Permalink to this heading">#</a></h1>
+<p>We start by looking at the nature of light, as seen by classical physics. Then we look at an experiment whose results cannot be explained in this picture and see how a quantum picture of light can resolve the discrepancy. Finally, we look at another experiment which confirms the quantum picture of electromagnetic radiation.</p>
+<section id="light-according-to-classical-physics">
+<h2>Light according to classical physics<a class="headerlink" href="#light-according-to-classical-physics" title="Permalink to this heading">#</a></h2>
+<p>Young’s double slits experiment (see lecture slides) demonstrates that light propagates as a wave. The light waves from each slit interfere to generate the interference pattern observed on the screen. According to classical physics (Maxwell’s equations), the light wave consists of oscillating electric and magnetic fields, polarised at right-angles to each other and propagating in the same direction with the same wavelength and frequency. The light wave moves at the speed of light in the medium through which the wave propagates. This is true for all electromagnetic (EM) waves, e.g. visible light, radiowaves, microwaves, infrared radiation, ultraviolet light, X-rays and gamma rays.</p>
+<p>For any kind of classical wave, the intensity (<span class="math notranslate nohighlight">\(I\)</span>) is defined as the energy flow through unit area per unit time. This is equivalent to the power (<span class="math notranslate nohighlight">\(P\)</span>) divided by the are (<span class="math notranslate nohighlight">\(A\)</span>). For EM waves this is given by</p>
+<div class="math notranslate nohighlight" id="equation-eqn1-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn1-1" title="Permalink to this equation">#</a></span>\[I= \frac{c\epsilon_0}{2} E_0^2,\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is the speed of light, <span class="math notranslate nohighlight">\(\epsilon_0\)</span> is the permittivity of free space and <span class="math notranslate nohighlight">\(E_0\)</span> is the amplitude of the electric field. Most importantly, note that the intensity, and hence power, is independent of the wavelength (<span class="math notranslate nohighlight">\(\lambda\)</span>) or frequency (<span class="math notranslate nohighlight">\(f\)</span>) of the wave.</p>
+</section>
+<section id="the-photoelectric-effect">
+<h2>The photoelectric effect<a class="headerlink" href="#the-photoelectric-effect" title="Permalink to this heading">#</a></h2>
+<p>In a metal, the flow of electric current is due to the flow of charged particles called electrons. The electrons are relatively free to move throughout the metal (an electron “gas” ), so most metals are good conductors of electricity. By shining light on a metal, some of these electrons can be knocked out of the metal to generate an electric current outside of the metal.</p>
+<figure class="align-center" id="fig-pe-expt">
+<img alt="_images/pe-expt.png" src="_images/pe-expt.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">A photoelectric effect experiment.</span><a class="headerlink" href="#fig-pe-expt" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the “Drude model”  of a metal, there are many free electrons, which behave like an ideal gas of charged particles, with a broad range of velocities (in fact, a Maxwell-Boltzmann distribution) and hence kinetic energies. Because of this large number of free, charged particles, metals are usually very good electrical conductors. Since electrons do not spontaneously leak out of a metal, they must be trapped inside by a potential well – it takes extra energy for an electron to escape from the metal. The extra energy required for the <em>most energetic</em> electrons to escape from the potential well is called the workfunction (<span class="math notranslate nohighlight">\(\phi\)</span>). This is a property of the metal, but not of the light that shines on it. This energy can be provided by light shining on the metal – this is the <em>photoelectric effect</em>. The ejected electrons are called <em>photoelectrons</em>.</p>
+<p>In a photoelectric effect experiment (see <a class="reference internal" href="#fig-pe-expt"><span class="std std-numref">Fig. 1</span></a>), a metal sample (the cathode) is placed an evacuated glass tube and connected to an electrical circuit. A second electrode (the anode) is also placed in the vacuum tube and connected to the other end of the electrical circuit. The electrical circuit consists of a voltage source (e.g. a battery), a potential divider (variable resistor) to change the voltage provided by the source, and an ammeter to measure the current flowing in the circuit. The voltage source is connected so that the cathode sample can be given a positive (or negative) voltage with respect to the anode. A source of monochromatic (single colour) light is shone onto the cathode, potentially ejecting photoelectrons towards the anode. If these photoelectrons hit the anode then a current flows in the circuit, with a magnitude that is proportional to the number of photoelectrons emitted per unit time.</p>
+<p>When no voltage is applied between the cathode and anode and light is shone onto the cathode, the following is observed:</p>
+<ul class="simple">
+<li><p>When the cathode is illuminated with light with a frequency greater than a certain “threshold frequency”  a current is detected, i.e. photoelectrons must be ejected from the metal.</p></li>
+<li><p>Electrons are emitted <em>instantaneously</em>, even for lowest intensity of light.</p></li>
+<li><p>If the frequency of incident light is below the threshold frequency, no electrons are emitted, no matter how intense the light is.
+If light were behaving entirely like a classical EM wave, its power would be proportional to its intensity, but independent of frequency. We would therefore expect that intense light of any frequency to generate photoelectrons, and also that there would be a time delay for emission for light of low intensity, while energy builds up in the sample until it exceeds the workfunction.</p></li>
+</ul>
+<p>When a voltage <em>is</em> applied between the cathode and anode and light is shone onto the cathode, the following is observed:</p>
+<ul class="simple">
+<li><p>When the cathode is illuminated with light with a single frequency greater than the threshold frequency, and the anode-cathode potential difference is such that the cathode is negatively charged and the anode is positively charged, the current is proportional to the intensity of the light (see <a class="reference internal" href="#fig-pe-res1"><span class="std std-numref">Fig. 2</span></a>).</p></li>
+<li><p>When the cathode is illuminated with light with a single frequency greater than the threshold frequency, and the anode-cathode potential difference is such that the cathode is positively charged and the anode is negatively charged (so that the flow of negatively charged electrons from cathode to anode is opposed by the applied voltage), the current decreases as the magnitude of the voltage is increased (see <a class="reference internal" href="#fig-pe-res1"><span class="std std-numref">Fig. 2</span></a>). The current-flow stops altogether at a particular voltage called the “stopping potential”  (<span class="math notranslate nohighlight">\(V_0\)</span>).</p></li>
+<li><p>When the wavelength or frequency of the light illuminating the cathode is changed, but the intensity is kept constant, the stopping potential is observed to change as well, and is proportional to the frequency (see <a class="reference internal" href="#fig-pe-res2"><span class="std std-numref">Fig. 3</span></a>).
+The electrons in the metal do not all have the same kinetic energy (see above), so the stopping potential <span class="math notranslate nohighlight">\(V_0\)</span> is the voltage required to stop the <em>most energetic</em> electrons from leaving the metal.</p></li>
+</ul>
+<figure class="align-center" id="fig-pe-res1">
+<img alt="_images/pe-res1.png" src="_images/pe-res1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Results of the photoelectric effect experiment for light of constant frequency.</span><a class="headerlink" href="#fig-pe-res1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-pe-res2">
+<img alt="_images/pe-res2.png" src="_images/pe-res2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Results of the photoelectric effect experiment for light of constant intensity.</span><a class="headerlink" href="#fig-pe-res2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The physics of this system is as follows. The light gives a certain amount of energy <span class="math notranslate nohighlight">\(E_p\)</span> to each electron in the cathode. If that energy is great than the workfunction <span class="math notranslate nohighlight">\(\phi\)</span>, then the most energetic electrons can be ejected from the cathode towards the anode, each with kinetic energy <span class="math notranslate nohighlight">\(E_p - \phi\)</span>. When the cathode is positively charged and the anode negatively charged, these electrons must do work against the electric field in order to reach the anode and cause a current to flow. The condition that these electrons reach the anode is that their kinetic energy must exceed <span class="math notranslate nohighlight">\(eV\)</span>, where <span class="math notranslate nohighlight">\(V\)</span> is the voltage between the cathode and anode. When <span class="math notranslate nohighlight">\(V=V_0\)</span>, the current is stopped because the most energetic electrons stop in the applied electric field just before they reach the anode. In this case <span class="math notranslate nohighlight">\(E_p - \phi = eV_0\)</span>.</p>
+<p>Why does the stopping potential depend on the wavelength of the light? Einstein’s postulate states that in fact the light is composed of small packets of energy (photons) with zero mass, each of which has an energy</p>
+<div class="math notranslate nohighlight" id="equation-eqn1-2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn1-2" title="Permalink to this equation">#</a></span>\[ E_p = hf = \frac{hc}{\lambda},\]</div>
+<p>where <span class="math notranslate nohighlight">\(h\)</span> is a new constant (``Planck’s constant” ). The intensity of the light is then proportional to the flux of photons – the number of photons flowing through unit area in unit time. The photons behave like “bullets”  with energy <span class="math notranslate nohighlight">\(hf\)</span>, which can hit individual electrons. If <span class="math notranslate nohighlight">\(f\)</span> is high enough, a single photon can instantaneously remove an electron from the metal. The current of electrons is proportional to the light intensity (if <span class="math notranslate nohighlight">\(f\)</span> is above the threshold frequency). The light intensity is equal to the number of photons hitting the cathode surface per second while the current is equal to the number of electrons emitted from the cathode surface per second.</p>
+<p>Putting this all together, we obtain a formula relating the stopping potential <span class="math notranslate nohighlight">\(V_0\)</span>, the workfunction <span class="math notranslate nohighlight">\(\phi\)</span> and the frequency of light <span class="math notranslate nohighlight">\(f\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eqn1-3">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn1-3" title="Permalink to this equation">#</a></span>\[eV_0 =hf - \phi.\]</div>
+<p>By measuring <span class="math notranslate nohighlight">\(V_0\)</span> as a function of <span class="math notranslate nohighlight">\(f\)</span> and plotting them together, we obtain a straight line graph with gradient <span class="math notranslate nohighlight">\(h/e\)</span> and y-intercept <span class="math notranslate nohighlight">\(-\phi/e\)</span> (or equivalently gradient <span class="math notranslate nohighlight">\(h\)</span> measured in units of eV s and y-intercept <span class="math notranslate nohighlight">\(-\phi\)</span> measured in units of eV). Hence we can simultaneously measure a property of the sample (the workfunction) and a fundamental property of the universe (Planck’s constant) using a simple photoelectric experiment!</p>
+</section>
+<section id="the-compton-effect">
+<h2>The Compton effect<a class="headerlink" href="#the-compton-effect" title="Permalink to this heading">#</a></h2>
+<figure class="align-center" id="fig-compton">
+<img alt="_images/compton.png" src="_images/compton.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Results of a Compton scattering experiment.</span><a class="headerlink" href="#fig-compton" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Further support for the photon picture of light is provided by observing what happens when light of very high frequency (X-rays) illuminates electrons trapped in a metal sample (the “Compton effect” ). The energy of the light (<span class="math notranslate nohighlight">\(\gtrsim\)</span> 10 keV) is sufficiently high that we can ignore the effect of the (small) workfunction of the metal (<span class="math notranslate nohighlight">\(\sim\)</span> 1 eV), and the (small) kinetic energy of the electrons (<span class="math notranslate nohighlight">\(\lesssim\)</span> 1 eV), and consider the electrons to all be free and at rest. The incoming X-rays, with wavelength <span class="math notranslate nohighlight">\(\lambda\)</span>, scatter from the electrons, causing the electrons to recoil. We measure the wavelength <span class="math notranslate nohighlight">\(\lambda'\)</span> of the scattered X-rays as a function of the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. We observe (see <a class="reference internal" href="#fig-compton"><span class="std std-numref">Fig. 4</span></a>) that <span class="math notranslate nohighlight">\(\lambda'\)</span> depends on <span class="math notranslate nohighlight">\(\theta\)</span>, and is largest when <span class="math notranslate nohighlight">\(\theta = 180 ^{\circ}\)</span>, i.e. when the X-rays are scattered back in the direction that they came from.</p>
+<p>By considering conservation of energy and momentum and using some special relativity we can derive an equation that explains this behaviour in the photon picture of light</p>
+<div class="math notranslate nohighlight" id="equation-eqn1-4">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eqn1-4" title="Permalink to this equation">#</a></span>\[\lambda' - \lambda = \frac{h}{m_ec}(1-\cos\theta),\]</div>
+<p>where <span class="math notranslate nohighlight">\(m_e\)</span> is the rest mass of the electron. When the X-rays are back-scattered with <span class="math notranslate nohighlight">\(\theta = 180^{\circ}\)</span>, they lose the maximum amount of energy possible (<span class="math notranslate nohighlight">\(2h/m_ec\)</span>), they obtain their lowest possible energy, and their wavelength is maximised (since <span class="math notranslate nohighlight">\(E_p = hc/\lambda\)</span>). In this case the electrons recoil with the maximum possible energy (equal to <span class="math notranslate nohighlight">\(2h/m_ec\)</span> by conservation of energy). The constant quantity <span class="math notranslate nohighlight">\(h/m_ec\)</span> is called the compton wavelength of the electron.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHY11006 - Quantum Physics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="topic2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">EM radiation from atoms</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-according-to-classical-physics">Light according to classical physics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-photoelectric-effect">The photoelectric effect</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-compton-effect">The Compton effect</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dan Tovey
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

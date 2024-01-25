@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>EM radiation from atoms &#8212; PHY11006 - Quantum Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'topic2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="De Bröglie Waves" href="topic3.html" />
+    <link rel="prev" title="The nature of light" href="topic1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logouni.png" class="logo__image only-light" alt="PHY11006 - Quantum Physics - Home"/>
+    <script>document.write(`<img src="_static/logouni.png" class="logo__image only-dark" alt="PHY11006 - Quantum Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    PHY11006 - Quantum Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="topic1.html">Topic 1 - The nature of light</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Topic 2 - EM radiation from atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic3.html">Topic 3 - de Broglie waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic4.html">Topic 4 - Introduction to quantum theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topic5.html">Topic 5 - The Heisenberg Uncertainty Principle</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftopic2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/topic2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>EM radiation from atoms</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-radiation">Thermal radiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-spectra">Line spectra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-bohr-model-of-the-atom">The Bohr model of the atom</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="em-radiation-from-atoms">
+<span id="topic2"></span><h1>EM radiation from atoms<a class="headerlink" href="#em-radiation-from-atoms" title="Permalink to this heading">#</a></h1>
+<p>Next, we look at how electromagnetic radiation is generated by atoms in materials. We find that the properties of thermal radiation from materials can only be explained with a quantum picture of energy. Then we see that light is also emitted from hot gases in the form of spectral lines, and that the wavelengths of these lines tells us something profound about the nature of atoms.</p>
+<section id="thermal-radiation">
+<h2>Thermal radiation<a class="headerlink" href="#thermal-radiation" title="Permalink to this heading">#</a></h2>
+<figure class="align-center" id="fig-bb">
+<img alt="_images/bb.png" src="_images/bb.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Wavelength spectrum of thermal radiation at different temperatures.</span><a class="headerlink" href="#fig-bb" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>All materials emit a continuous spectrum of EM radiation when they are at a finite temperature <span class="math notranslate nohighlight">\(T\)</span>. This radiation (``thermal radiation” or “black-body radiation”) is observed to obey Stefan’s Law – the power emitted is given by <span class="math notranslate nohighlight">\(P=\sigma A \epsilon T^4,\)</span> where <span class="math notranslate nohighlight">\(A\)</span> is the area of the emitter, <span class="math notranslate nohighlight">\(\epsilon\)</span> is the emissivity (<span class="math notranslate nohighlight">\(=1\)</span> for a perfectly absorbing / black object; <span class="math notranslate nohighlight">\(=0\)</span> for a perfectly reflecting object), and <span class="math notranslate nohighlight">\(\sigma\)</span> is Stefan’s constant <span class="math notranslate nohighlight">\(\sigma = 5.67 \times 10^{-8}\)</span> W m<span class="math notranslate nohighlight">\(^{-2}\)</span> K<span class="math notranslate nohighlight">\(^{-4}\)</span>. The intensity distribution of the radiation as a function of wavelength (see <a class="reference internal" href="#fig-bb"><span class="std std-numref">Fig. 5</span></a>) is observed to be zero at short wavelength (<span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span>), peaks at some finite wavelength (<span class="math notranslate nohighlight">\(\lambda_p\)</span>), and then falls back to zero as <span class="math notranslate nohighlight">\(\lambda \rightarrow \infty\)</span>. Furthermore, <span class="math notranslate nohighlight">\(\lambda_p\)</span> is observed to decrease with increasing temperature according to Wien’s Displacement Law – <span class="math notranslate nohighlight">\(\lambda_p T = 2.9\times 10^{-3}\)</span> m K (a constant).</p>
+<p>A classical model of the (continuous) distribution of the wavelengths of standing waves of light inside the emitting material gives the Rayleigh-Jeans formula for the intensity distribution as a function of wavelength:</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-1">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eqn2-1" title="Permalink to this equation">#</a></span>\[I(\lambda) = \frac{2\pi k_B T}{\lambda^4},\]</div>
+<p>where <span class="math notranslate nohighlight">\(k_B\)</span> is Boltzmann’s constant. This distribution diverges to infinity as <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span> (the ultra-violet end of the visible light spectrum) however, and does not peak at any finite wavelength, in contrast to what is observed. This is the “Ultraviolet Catastrophe” of classical physics.</p>
+<p>The solution to the Ultraviolet Catastrophe is obtained by assuming that rather than a continuous distribution of wavelengths only a discrete set of wavelengths (modes) is allowed, of energy <span class="math notranslate nohighlight">\(E=nhc/\lambda\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is an integer and <span class="math notranslate nohighlight">\(h\)</span> is Planck’s constant. This gives rise to the Planck formula for the intensity distribution as a function of wavelength:</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-2">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eqn2-2" title="Permalink to this equation">#</a></span>\[I(\lambda) = \frac{2\pi h c^2}{\lambda^5\left(e^{hc/\lambda k_B T}-1\right)},\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is the speed of light. This formula indeed gives a distribution that peaks at a finite wavelength that depends on <span class="math notranslate nohighlight">\(T\)</span> consistently with Wien’s displacement law. Furthermore, when <span class="math notranslate nohighlight">\(\lambda \gg hc/k_B T\)</span> this formula can be approximated by the Rayleigh-Jeans formula, so the quantum physics result is consistent with the classical picture at long wavelength and low energy.</p>
+</section>
+<section id="line-spectra">
+<h2>Line spectra<a class="headerlink" href="#line-spectra" title="Permalink to this heading">#</a></h2>
+<p>When observing EM radiation emission from very hot gases we see additional features in the emission spectrum compared with hot solid materials. Overlaying the thermal radiation distribution we see sharp peaks of “lines” in the emission spectrum, that are characteristic of the atoms that are in the gas. To understand these emission lines we need to understand the structure of the atoms in the gas.</p>
+<figure class="align-center" id="fig-rutherford">
+<img alt="_images/rutherford.png" src="_images/rutherford.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The Rutherford scattering experiment.</span><a class="headerlink" href="#fig-rutherford" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Since electrons were discovered by Thomson in 1897, we have known that atoms are partly composed of negatively charged electrons. Given that atoms are neutral, we also know that there must be a balancing positive charge in the atoms. In the “plum pudding model” of the atom, the electrons are scattered randomly through a positively charged material. The Rutherford scattering experiment (see <a class="reference internal" href="#fig-rutherford"><span class="std std-numref">Fig. 6</span></a>) demonstrates that this picture is incorrect however. In this experiment a collimated beam of energetic, positively charged <span class="math notranslate nohighlight">\(\alpha\)</span> particles is fired at a thin foil of gold. The gold foil is surrounded by <em>scintillator</em> screens, which emit a flash of light whenever they are hit by an <span class="math notranslate nohighlight">\(\alpha\)</span> particle. Most <span class="math notranslate nohighlight">\(\alpha\)</span> particles are observed to pass straight through the foil, or are deflected through only very small angles. However, occasionally an <span class="math notranslate nohighlight">\(\alpha\)</span> particle is deflected through a very large angle, possibly as large as 180<span class="math notranslate nohighlight">\(^\circ\)</span>.</p>
+<p>The explanation of the results seen in the Rutherford scattering experiment is that the mass distribution in the atoms is not uniform, as in the plum pudding model, but rather consists of a small, dense, positively charged “nucleus”, surrounded by a diffuse cloud of light, negatively charged electrons. The <span class="math notranslate nohighlight">\(\alpha\)</span> particles mostly pass straight through the diffuse electron cloud and hence are not deflected. However, occasionally they strike a heavy nucleus head-on, in which case they can be deflected through large angles.</p>
+<p>The wavelengths of the emission lines from Hydrogen, and some alkali metals, are observed to empirically follow the <em>Rydberg-Ritz</em> formula:</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-3">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eqn2-3" title="Permalink to this equation">#</a></span>\[\frac{1}{\lambda} = R\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right),\]</div>
+<p>where <span class="math notranslate nohighlight">\(n_2\)</span> and <span class="math notranslate nohighlight">\(n_1\)</span> are integers, <span class="math notranslate nohighlight">\(n_2 &lt; n_1\)</span>, and <span class="math notranslate nohighlight">\(R= 1.097776\times 10^7\)</span> m<span class="math notranslate nohighlight">\(^{-1}\)</span> is the empirically measured “Rydberg constant”. In order to understand the origin of this formula we can use our knowledge of the structure of the atom from the Rutherford scattering experiment. Given that the negatively charged electrons surround heavy positively charged nuclei it is natural to consider a “planetary” model (or “Rutherford model”) of the Hydrogen atom, in which each electron orbits a nucleus, with the electrostatic attraction between the nucleus and the electron providing the centripetal force of the orbit:</p>
+<div class="math notranslate nohighlight" id="equation-eqn-centrip">
+<span class="eqno">(8)<a class="headerlink" href="#equation-eqn-centrip" title="Permalink to this equation">#</a></span>\[\frac{Ze^2}{4\pi \epsilon_0 r^2} = \frac{m_ev^2}{r},
+\label{eqn:centrip}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Z=1\)</span> is the charge on the Hydrogen nucleus, <span class="math notranslate nohighlight">\(r\)</span> is the radius of the orbit and <span class="math notranslate nohighlight">\(v\)</span> is the electron velocity.</p>
+<p>We can now calculate the total energy of an electron orbiting the Hydrogen nucleus. It is the sum of its kinetic energy <span class="math notranslate nohighlight">\(E_K = (1/2) m_e v^2\)</span>  and electrostatic potential energy <span class="math notranslate nohighlight">\(E_U = -Ze^2/4\pi\epsilon_0 r\)</span> (remembering the charge on an electron is <span class="math notranslate nohighlight">\(-e\)</span>). The kinetic energy can be evaluated by multiplying both sides of Eqn. <a class="reference internal" href="#equation-eqn-centrip">(8)</a> by <span class="math notranslate nohighlight">\(r/2\)</span> to obtain</p>
+<div class="math notranslate nohighlight" id="equation-eqn-ek">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eqn-ek" title="Permalink to this equation">#</a></span>\[E_K = \frac{Ze^2}{8\pi\epsilon_0 r}. 
+\label{eqn:ek} \]</div>
+<p>The total energy is then:</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-6">
+<span class="eqno">(10)<a class="headerlink" href="#equation-eqn2-6" title="Permalink to this equation">#</a></span>\[E_{\rm tot} = E_K + E_U = -\frac{Ze^2}{8\pi\epsilon_0 r}.\]</div>
+<p>Setting <span class="math notranslate nohighlight">\(Z=1\)</span>, this is the energy of the electron according the Rutherford model of the Hydrogen atom.</p>
+<p>This leaves a couple of problems however. Firstly, although this tells us the energy of the electron in terms of its orbital radius <span class="math notranslate nohighlight">\(r\)</span>, we do not know what values <span class="math notranslate nohighlight">\(r\)</span> should take. Secondly, according to classical electromagnetism an accelerating charge continuously emits electromagnetic radiation and hence loses energy. The direction of the velocity of the orbiting electron is changing, even if its speed is not, and hence the electron is accelerating in its orbit. The electron should therefore lose energy by radiation and the orbit should decay, with the electron spiralling into the nucleus. The atom should therefore not be stable.</p>
+</section>
+<section id="the-bohr-model-of-the-atom">
+<h2>The Bohr model of the atom<a class="headerlink" href="#the-bohr-model-of-the-atom" title="Permalink to this heading">#</a></h2>
+<p>Bohr resolved this apparent paradox by proposing three new postulates:</p>
+<ol class="arabic simple">
+<li><p>Only certain electron orbits (``stationary states”) are allowed, and in those orbits the electron does not emit em radiation.</p></li>
+<li><p>An atom emits radiation only when an electron makes a transition from one stationary state to another.</p></li>
+<li><p>The frequency of the radiation emitted when an electron makes a transition from one stationary state with energy <span class="math notranslate nohighlight">\(E_1\)</span> to one with energy <span class="math notranslate nohighlight">\(E_2\)</span> is given by <span class="math notranslate nohighlight">\(f = (E_1 - E_2)/h\)</span>, where <span class="math notranslate nohighlight">\(h\)</span> is Planck’s constant.</p></li>
+</ol>
+<p>Now, if an electron moves from an orbit of radius <span class="math notranslate nohighlight">\(r_1\)</span> and energy <span class="math notranslate nohighlight">\(E_1\)</span> to a second orbit of smaller radius <span class="math notranslate nohighlight">\(r_2\)</span> and energy <span class="math notranslate nohighlight">\(E_2\)</span> then according to the Rutherford model the difference in energies (and hence the energy of the emitted radiation) is given by</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-7">
+<span class="eqno">(11)<a class="headerlink" href="#equation-eqn2-7" title="Permalink to this equation">#</a></span>\[\Delta E = E_1 - E_2 = -\frac{e^2}{8\pi\epsilon_0 r_1} - -\frac{e^2}{8\pi\epsilon_0 r_2} = \frac{e^2}{8\pi\epsilon_0 }\left(\frac{1}{r_2} - \frac{1}{r_1}\right).\]</div>
+<p>According to Bohr’s third postulate this must be equal to <span class="math notranslate nohighlight">\(hf\)</span>, i.e. Planck’s constant times the frequency of the emitted radiation.</p>
+<p>We now need to calculate the radii of the allowed stationary state electron orbits. Bohr made a fourth assumption at this point, which is that the magnitude of the angular momentum of the electrons is <em>quantised</em> – in other words that it can only take on discrete values (we shall see why later). The magnitude of the angular momentum is given by <span class="math notranslate nohighlight">\(L = pr = m_evr\)</span>, where <span class="math notranslate nohighlight">\(p\)</span> is the linear momentum of the electron. Bohr set this equal to an integer multiple of <span class="math notranslate nohighlight">\(\hbar=h/2\pi\)</span>, so that <span class="math notranslate nohighlight">\(m_evr = n\hbar.\)</span> We can now rearrange this equation to get an expression for <span class="math notranslate nohighlight">\(v^2\)</span> and set that equal to a similar expression obtained by rearranging Eqn. <a class="reference internal" href="#equation-eqn-ek">(9)</a> (with <span class="math notranslate nohighlight">\(Z=1\)</span> for Hydrogen):</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-8">
+<span class="eqno">(12)<a class="headerlink" href="#equation-eqn2-8" title="Permalink to this equation">#</a></span>\[v^2 = \frac{n^2\hbar^2}{m_e^2r^2} = \frac{e^2}{4\pi \epsilon_0 m_e r}.\]</div>
+<p>Rearranging this we find finally that</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-9">
+<span class="eqno">(13)<a class="headerlink" href="#equation-eqn2-9" title="Permalink to this equation">#</a></span>\[r = \frac{n^2\hbar^24\pi\epsilon_0}{m_e e^2}=\frac{n^2 h^2 \epsilon_0}{\pi m_e e^2}=n^2 a_0,\]</div>
+<p>where, in the last step, we have introduced <span class="math notranslate nohighlight">\(a_0\)</span> as the radius of the smallest (<span class="math notranslate nohighlight">\(n=1\)</span>) orbit of the hydrogen atom: <span class="math notranslate nohighlight">\(a_0 = h^2 \epsilon_0/\pi m_e e^2\)</span>.</p>
+<p>We can substitute this expression for the radii of the stationary states into the formula for the energy loss <span class="math notranslate nohighlight">\(\Delta E\)</span> of an electron moving between orbits of radius <span class="math notranslate nohighlight">\(r_1\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span> and use Bohr’s third postulate to obtain</p>
+<div class="math notranslate nohighlight" id="equation-eqn2-10">
+<span class="eqno">(14)<a class="headerlink" href="#equation-eqn2-10" title="Permalink to this equation">#</a></span>\[f = \frac{e^2}{8\pi\epsilon_0 h}\left(\frac{1}{r_2} - \frac{1}{r_1}\right) = \frac{e^2}{8\pi\epsilon_0 ha_0}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right) = \frac{e^4}{8\epsilon_0^2 h^3}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right).\]</div>
+<p>Comparing this with the Rydberg-Ritz formula for <span class="math notranslate nohighlight">\(1/\lambda\)</span> and remembering that <span class="math notranslate nohighlight">\(f=c/\lambda\)</span> we find that the constants multiplying the bracket in this expression should equal the empirical Rydberg constant times the speed of light <span class="math notranslate nohighlight">\(c\)</span>. In fact the agreement is excellent, confirming that Bohr’s postulates applied to the Rutherford model (now called the “Bohr model”) provide an explanation for the Rydberg-Ritz formula.</p>
+<p>Unfortunately, the Bohr model does not provide a complete description of atomic physics. In particular it:</p>
+<ul class="simple">
+<li><p>does not work well for many-electron atoms (even helium);</p></li>
+<li><p>cannot explain the fine structure of spectral lines observed at high resolution, or relative intensities of spectral lines;</p></li>
+<li><p>cannot explain the effect of magnetic fields on spectral lines (the Zeeman effect);</p></li>
+<li><p>is fundamentally inconsistent with Heisenberg’s uncertainty principle (see Topic 5).</p></li>
+</ul>
+<p>To resolve these problems we need a fundamentally different approach to quantum physics – quantum mechanics (Topic 4). First, though, we need to understand why the angular momentum of electrons should be quantised.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="topic1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">The nature of light</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="topic3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">De Bröglie Waves</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-radiation">Thermal radiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-spectra">Line spectra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-bohr-model-of-the-atom">The Bohr model of the atom</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dan Tovey
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
