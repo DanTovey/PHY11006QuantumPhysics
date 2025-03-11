@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Heisenberg Uncertainty Principle &#8212; PHY11006 - Quantum Physics</title>
   
@@ -29,39 +28,35 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'topic5';</script>
@@ -161,7 +156,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -206,9 +212,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -375,26 +381,26 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-heisenberg-uncertainty-principle">
-<span id="topic5"></span><h1>The Heisenberg Uncertainty Principle<a class="headerlink" href="#the-heisenberg-uncertainty-principle" title="Permalink to this heading">#</a></h1>
+<span id="topic5"></span><h1>The Heisenberg Uncertainty Principle<a class="headerlink" href="#the-heisenberg-uncertainty-principle" title="Link to this heading">#</a></h1>
 <p>One of the more bizarre consequences of quantum mechanics is that there is a fundamental limit on the precision with which certain quantities can be measured simultaneously. This is known as the “Heisenberg Uncertainty Principle” (HUP). It arises from the fact that we describe physical systems with the wavefunction, that is a solution to the Schrödinger equation. We can use several thought experiments to justify the HUP in realistic physical systems (see the lecture slides), however it is perhaps easier to get an intuitive feel for it from a more abstract case.</p>
 <p>Consider a particle described by a wavefunction <span class="math notranslate nohighlight">\(\psi(x) = A \sin(kx)\)</span>. The wavenumber <span class="math notranslate nohighlight">\(k=2\pi/\lambda = p/\hbar\)</span> is directly related to the momentum (<span class="math notranslate nohighlight">\(p\)</span>) of the particle by the de Bröglie relation <span class="math notranslate nohighlight">\(p=h/\lambda\)</span>. Since the wavenumber is fixed, so is the momentum <span class="math notranslate nohighlight">\(p\)</span>. Any measurement of the momentum of this particle will give the same value <span class="math notranslate nohighlight">\(p=\hbar k\)</span>, and so the uncertainty in the result of this measurement is zero. On the other hand, if we measure the position of the particle, we could find any value between <span class="math notranslate nohighlight">\(x=-\infty\)</span> and <span class="math notranslate nohighlight">\(x=+\infty\)</span>, because the wavefunction is non-zero across the full range of <span class="math notranslate nohighlight">\(x\)</span>, and the probability of finding the particle at a particular values of <span class="math notranslate nohighlight">\(x\)</span> is given by <span class="math notranslate nohighlight">\(|\psi(x)|^2\)</span>.</p>
 <figure class="align-center" id="fig-wavepacket">
 <img alt="_images/wavepacket.png" src="_images/wavepacket.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">A wavepacket formed from a superpositions of many wavefunctions of different wavenumber and hence frequency.</span><a class="headerlink" href="#fig-wavepacket" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">A wavepacket formed from a superpositions of many wavefunctions of different wavenumber and hence frequency.</span><a class="headerlink" href="#fig-wavepacket" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now consider what happens when we combine wavefunctions of different wavenumber and hence different wavelength and hence different momentum. The superposition of the wavefunctions forms beat waves of varying amplitude. The more wavefunctions that we add to the superposition, with a broader range of wavenumbers, wavelengths and hence momenta, the more the beats become amplified at one location where they are all in phase. This creates a localised maximum in the combined wavefunction, called a wavepacket (see <a class="reference internal" href="#fig-wavepacket"><span class="std std-numref">Fig. 9</span></a>). With some maths (Fourier series or Fourier transforms) one can show that the width of this wavepacket in <span class="math notranslate nohighlight">\(x\)</span> is inversely proportional to the range of momenta of the waves that are contributing to the wavepacket. Given that we now have a range of values of momenta, a measurement of the momentum of the particle is no longer fixed but rather could be any one of the values used in the superposition. Hence the result of a measurement of the momentum becomes more uncertain, while the result of a measurement of position (given by the width of the wavepacket in <span class="math notranslate nohighlight">\(x\)</span>) becomes more precise. Only by combining wavefunctions with an infinite range of momenta (and hence infinite uncertainty in <span class="math notranslate nohighlight">\(p\)</span>) can we obtain a wavepacket wavefunction that is completely localised in position (giving a perfectly precise measurement of <span class="math notranslate nohighlight">\(x\)</span>).</p>
 <p>Wavefunction solutions to the Schrödinger equation, when combined with the Born rule, give rise to exactly the behaviour discussed above. Mathematically, we find that certain pairs of observable quantities can only be measured simultaneously with precisions that are inversely proportional to each other, and so they cannot both be measured simultaneously with total precision. Denoting the uncertainties in measured quantities by <span class="math notranslate nohighlight">\(\Delta\)</span> we find that the precisions of simultaneous measurements of position <span class="math notranslate nohighlight">\(x\)</span> and momentum <span class="math notranslate nohighlight">\(p\)</span> are limited by:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8d1f874c-1712-4b3e-8ba2-f6944707aa77">
-<span class="eqno">(27)<a class="headerlink" href="#equation-8d1f874c-1712-4b3e-8ba2-f6944707aa77" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5649a7c2-1f6c-49ab-a2d7-1c18d0d9f536">
+<span class="eqno">(27)<a class="headerlink" href="#equation-5649a7c2-1f6c-49ab-a2d7-1c18d0d9f536" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \Delta x \Delta p \geq \frac{\hbar}{2}.
-\end{equation}\]</div>
+\end{equation} \]</div>
 <p>Similarly the precisions of simultaneous measurements of energy <span class="math notranslate nohighlight">\(E\)</span> and time <span class="math notranslate nohighlight">\(t\)</span> are limited by:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-99720d5b-561c-4afa-9e50-dad892d5d043">
-<span class="eqno">(28)<a class="headerlink" href="#equation-99720d5b-561c-4afa-9e50-dad892d5d043" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-abfc1c3a-300b-493e-8b7f-832444310016">
+<span class="eqno">(28)<a class="headerlink" href="#equation-abfc1c3a-300b-493e-8b7f-832444310016" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \Delta E \Delta t \geq \frac{\hbar}{2}.
-\end{equation}\]</div>
+\end{equation} \]</div>
 <p>This has important physical consequences across the whole of physics. For instance, it means that any fundamental particle which has a very short lifetime before it decays (equivalent to <span class="math notranslate nohighlight">\(\Delta t\)</span>) also must have a very large uncertainty in the value of its mass obtained from a measurement (because <span class="math notranslate nohighlight">\(E=mc^2\)</span> and hence <span class="math notranslate nohighlight">\(\Delta m = \Delta E / c^2 \geq \hbar / 2 c^2 \Delta t\)</span>).</p>
 </section>
 
@@ -465,7 +471,7 @@ By Dan Tovey
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
