@@ -8,7 +8,7 @@ Having examined the quantum nature of light, we now turn our attention to the na
 The equations of special relativity (beyond the scope of this course) require that the energy ($E$), momentum ($p$) and rest mass ($m_0$) of a particle are related by 
 ```{math}
 :label: eqn3.1
-E^2 = p^2c^2 +m_0c^4,
+E^2 = p^2c^2 +m_0^2c^4,
 ``` 
 where $c$ is the speed of light. If the particle is massless, as is the case for a photon, then $m_0=0$ and so $p=E/c$. But we have already seen that $E=hf=hc/\lambda$ and so this implies that 
 ```{math}

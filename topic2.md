@@ -16,7 +16,7 @@ All materials emit a continuous spectrum of EM radiation when they are at a fini
 A classical model of the (continuous) distribution of the wavelengths of standing waves of light inside the emitting material gives the Rayleigh-Jeans formula for the intensity distribution as a function of wavelength: 
 ```{math}
 :label: eqn2.1
-I(\lambda) = \frac{2\pi k_B T}{\lambda^4},
+I(\lambda) = \frac{2\pi c k_B T}{\lambda^4},
 ``` 
 where $k_B$ is Boltzmann's constant. This distribution diverges to infinity as $\lambda \rightarrow 0$ (the ultra-violet end of the visible light spectrum) however, and does not peak at any finite wavelength, in contrast to what is observed. This is the "Ultraviolet Catastrophe" of classical physics.
 
