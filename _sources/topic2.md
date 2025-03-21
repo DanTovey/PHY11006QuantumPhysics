@@ -99,7 +99,7 @@ where, in the last step, we have introduced $a_0$ as the radius of the smallest 
 We can substitute this expression for the radii of the stationary states into the formula for the energy loss $\Delta E$ of an electron moving between orbits of radius $r_1$ and $r_2$ and use Bohr's third postulate to obtain 
 ```{math}
 :label: eqn2.10
-f = \frac{e^2}{8\pi\epsilon_0 h}\left(\frac{1}{r_2} - \frac{1}{r_1}\right) = \frac{e^2}{8\pi\epsilon_0 ha_0}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right) = \frac{e^4}{8\epsilon_0^2 h^3}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right).
+f = \frac{e^2}{8\pi\epsilon_0 h}\left(\frac{1}{r_2} - \frac{1}{r_1}\right) = \frac{e^2}{8\pi\epsilon_0 ha_0}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right) = \frac{e^4 m_e}{8\epsilon_0^2 h^3}\left(\frac{1}{n_2^2} - \frac{1}{n_1^2}\right).
 ``` 
 Comparing this with the Rydberg-Ritz formula for $1/\lambda$ and remembering that $f=c/\lambda$ we find that the constants multiplying the bracket in this expression should equal the empirical Rydberg constant times the speed of light $c$. In fact the agreement is excellent, confirming that Bohr's postulates applied to the Rutherford model (now called the "Bohr model") provide an explanation for the Rydberg-Ritz formula.
 
